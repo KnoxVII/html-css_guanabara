@@ -50,7 +50,9 @@ nav > a {
 nav > a:hover {
     background-color: #85fc99;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
     color: #2b4d36;
+    margin: 0px;
     padding: 5px;
     transition: 0.2s;
 }
@@ -63,6 +65,17 @@ main {
     margin: 0px 150px 10px 150px;
     padding: 10px 0px 10px 0px;
     text-align: justify;
+}
+
+main > p {
+    text-indent: 30px;
+    margin: 20px;
+}
+
+main > p > a {
+    color: #2b4d36;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .titulo_android--principal {
@@ -80,25 +93,19 @@ main {
     padding: 5px;
 }
 
-main > p {
-    text-indent: 30px;
-    margin: 20px;
-}
-
-main > p > a {
-    color: #2b4d36;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-main > img {
+img {
+    display: block;
     margin: auto;
 }
 
 div#video {
     align-items: center;
-    background-color: #2b4d36;
-    margin: 0px;
+    background-color: #2b4d36;   
+}
+
+iframe {
+    display: block;
+    margin: auto;
 }
 
 div#lista {
