@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body {
+    background-color: #a7f5ba;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #85fc99, #448d50, #2b4d36);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555);
+    padding: 5px;
+    height: 150px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+    margin: 20px 0px 30px 0;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+    margin: 20px;
+}
+
+nav {
+    margin: 30px 0px 0px 10px;
+
+}
+
+nav > a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #85fc99;
+    border-radius: 5px;
+    color: #2b4d36;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+main {
+    align-items: center;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.555);
+    margin: 0px 150px 10px 150px;
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+}
+
+.titulo_android--principal {
+    color: #2b4d36;
+    font-family: 'idroid';
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.titulo_android--secundario {
+    color: #2b4d36;
+    background-image: linear-gradient(to right, #a7f5ba, white);
+    font-family: 'idroid';
+    margin-left: 10px;
+    padding: 5px;
+}
+
+main > p {
+    text-indent: 30px;
+    margin: 20px;
+}
+
+main > p > a {
+    color: #2b4d36;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main > img {
+    margin: auto;
+}
+
+div#video {
+    align-items: center;
+    background-color: #2b4d36;
+    margin: 0px;
+}
+
+div#lista {
+    background-color: #c7ffd5;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.div_container {
+    padding: 10px;
+}
+
+.div_lista {
+    padding: 10px;
+}
+
+div > h3 {
+    background-color: #2b4d36;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 8px;
+}
+
+div > p > a {
+    color: #2b4d36;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #2b4d36;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
