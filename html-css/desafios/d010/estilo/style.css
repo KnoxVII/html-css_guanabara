@@ -96,34 +96,48 @@ main {
     text-align: justify;
 }
 
-main> article > p {
-    text-indent: 30px;
-    margin: 20px;
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
 }
 
-main > article> p > a {
+main h2 {
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    text-indent: 8px;
+}
+
+main p {
+    line-height: 2em;
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main a {
     color: var(--cor5);
     font-weight: bold;
     text-decoration: none;
 }
 
-.titulo_Android--principal {
-    color: var(--cor5);
-    font-family: var(--fonte-android);
-    font-size: 1.5em;
-    padding: 10px;
+main strong {   
+    color: var(--cor4);
+    font-weight: bold;
 }
 
-.titulo_Android--secundario {
+main a {
+    background-color: var(--cor0);
     color: var(--cor5);
-    background-image: linear-gradient(to right, #85E1B5, white);
-    font-family: var(--fonte-android);
-    margin-left: 10px;
-    padding: 5px;
+    font-weight: bold;
+    padding: 2px 5px;
+    transition-duration: .2s;
 }
 
-main img.pequena {
-    width: 50%;
+main a:hover {
+    color: var(--cor3);
 }
 
 img {
@@ -131,6 +145,11 @@ img {
     margin: auto;
     width: 100%;
 }
+
+img.pequena {
+    max-width: 300px;
+}
+
 
 div#video {
     align-items: center;
@@ -163,7 +182,7 @@ div > h3 {
     padding: 8px;
 }
 
-div > p > a {
+div a {
     color: var(--cor5);
     font-weight: bold;
     text-decoration: none;
