@@ -5,7 +5,9 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-style: normal;
     font-weight: normal;
+}
 
+@font-face {   
     font-family: 'Bebas Neue';
     src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
     font-style: normal;
@@ -35,6 +37,10 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    content: '\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3) , var(--cor5));
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555);
@@ -48,7 +54,7 @@ header {
 header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0px 0px 30px 0;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
@@ -57,7 +63,7 @@ header > h1 {
 header > p {
     font-size: 1.2em;
     margin: auto;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 15px 10px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
     max-width: 500px;
 }
@@ -69,7 +75,7 @@ nav {
 }
 
 nav > a {
-    color: #ffffff;
+    color: var(--cor0);
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
@@ -121,6 +127,7 @@ main a {
     color: var(--cor5);
     font-weight: bold;
     text-decoration: none;
+    
 }
 
 main strong {   
@@ -151,48 +158,59 @@ img.pequena {
 }
 
 
-div#video {
-    align-items: center;
-    background-color: var(--cor5);   
+div.video {
+    background-color: var(--cor5);  
+    margin: 0px -20px 30px -20px; 
+    padding: 20px;
+    padding-bottom: 56.7%;
+    position: relative;
 }
 
-iframe {
-    display: block;
-    margin: auto;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
 }
 
-div#lista {
+aside {
     background-color: var(--cor1);
     border-radius: 10px;
-    margin: 10px;
-}
-
-.div_container {
+    box-shadow: 3px 3px 8px #0000002a ;
     padding: 10px;
 }
 
-.div_lista {
-    padding: 10px;
-}
-
-div > h3 {
+aside > h3 {
     background-color: var(--cor5);
     border-radius: 10px 10px 0px 0px;
     color: white;
-    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
 }
 
-div a {
-    color: var(--cor5);
-    font-weight: bold;
-    text-decoration: none;
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0';
 }
-
 
 footer {
     background-color: var(--cor5);
     color: white;
+    font-size: 0.8em;
     padding: 5px;
     text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor1);
+    transition-duration: .2s;
 }
 
