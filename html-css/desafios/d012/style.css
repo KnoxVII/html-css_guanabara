@@ -22,37 +22,47 @@
     padding: 0px;   
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: var(--preto);
     color: var(--branco);
-    padding: 30px;
     text-align: center;
+    padding: 50px;
 }
 
 #titulo {
     font-family: var(--fonte-titulo);
-    font-size: 3em;
+    font-size: 4em;
+    font-variant: small-caps;
 }
 
 header p {
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
 }
 
-header a {
+a {
     color: var(--branco);
     font-weight: bold;
     text-decoration: none;
 }
 
-main {
+a:hover {
+    text-decoration: underline;
+}
+
+section {
     font-family: var(--fonte-poema);
     font-size: 1.5em;
-    line-height: 50px;
+    line-height: 2em;
+    padding: 10vh 30px;
 }
 
 .container-branco {
     background-color: var(--branco);
-    padding: 100px 20px;
     box-shadow: 15px 15px 5px black;  
 }
 
@@ -62,14 +72,13 @@ main {
     background-size: cover;
     background-attachment: fixed;
     color: var(--branco);
-    padding: 100px 0px;
 }
 
 .container-paragrafos1 {
     background-color: #1414145d;
     border-radius: 5px;
     padding: 20px;
-    width: 50%;
+    width: 400px;
 }
 
 .container-imagem2 {
@@ -85,7 +94,7 @@ main {
     background-color: #1414145d;
     border-radius: 5px;
     padding: 20px;
-    width: 50%;
+    width: 400px;
 
 }
 
