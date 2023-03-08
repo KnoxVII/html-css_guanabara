@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Teste de Formulários</h1>
-    <form action="cadastro.php" method="get"></form>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="num">Número:</label>
+            <input type="range" name="num" id="num" min="0" max="10" oninput="val.innerHTML = Number(num.value)"> 
+            <output id="val">5</output>
+        </p>
 
-    <p>
-        <label for="num">Número:</label>
-        <input type="range" name="num" id="num" min="0" max="10" oninput="val.innerHTML = Number(num.value)"> 
-        <output id="val">5</output>
-    </p>
-
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
