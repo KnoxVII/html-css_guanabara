@@ -19,8 +19,23 @@ header > h1 {
     text-align: center;
 }
 
-nav {
+span#burger {
+    background-color: rgb(31, 31, 31);
+    color: white;
     display: block;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+span#burger:hover {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
 }
 
 nav > ul {
@@ -29,12 +44,13 @@ nav > ul {
 
 nav a {
     background-color: rgb(51, 51, 51);
-    border-top: 2px solid #cacaca;
+    border-top: 2px solid lightgray;
     color: white;
     display: block;
     padding: 10px;
     text-align: center;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 nav a:hover {
