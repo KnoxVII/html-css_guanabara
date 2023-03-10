@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    nav a:hover {
+        background-color: lightgray;
+    }
+
+    main {
+        width: 700px;
+    }
+}
